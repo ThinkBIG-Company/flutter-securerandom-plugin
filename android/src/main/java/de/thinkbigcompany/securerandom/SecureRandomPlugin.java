@@ -1,4 +1,4 @@
-package systems.ak.securerandom;
+package de.thinkbigcompany.securerandom;
 
 import java.security.SecureRandom;
 

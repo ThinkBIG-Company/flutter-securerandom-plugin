@@ -1,8 +1,15 @@
-#import "SecureRandomPlugin.h"
+#import "SecurerandomPlugin.h"
+#if __has_include(<securerandom/securerandom-Swift.h>)
 #import <securerandom/securerandom-Swift.h>
+#else
+// Support project import fallback if the generated compatibility header
+// is not copied when this plugin is created as a library.
+// https://forums.swift.org/t/swift-static-libraries-dont-copy-generated-objective-c-header/19816
+#import "securerandom-Swift.h"
+#endif
 
-@implementation SecureRandomPlugin
+@implementation SecurerandomPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
-  [SwiftSecureRandomPlugin registerWithRegistrar:registrar];
+  [SwiftSecurerandomPlugin registerWithRegistrar:registrar];
 }
 @end

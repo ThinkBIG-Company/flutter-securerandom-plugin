@@ -1,4 +1,4 @@
 #import <Flutter/Flutter.h>
 
-@interface SecureRandomPlugin : NSObject<FlutterPlugin>
+@interface SecurerandomPlugin : NSObject<FlutterPlugin>
 @end
