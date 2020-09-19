@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class SwiftSecurerandomPlugin: NSObject, FlutterPlugin {
+public class SwiftSecureRandomPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "securerandom", binaryMessenger: registrar.messenger())
-    let instance = SwiftSecurerandomPlugin()
+    let instance = SwiftSecureRandomPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
