@@ -1,4 +1,4 @@
-#import "SecurerandomPlugin.h"
+#import "SecureRandomPlugin.h"
 #if __has_include(<securerandom/securerandom-Swift.h>)
 #import <securerandom/securerandom-Swift.h>
 #else
